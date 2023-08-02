@@ -69,7 +69,7 @@ export default function IndexUI(props: IndexUIProps) {
 					<input className={'border-2 w-20'} type="number" id="capacity" name="capacity" {...register("capacity", {
 						required: true,
 						min: 1,
-						max: 100,
+						max: 10000,
 						setValueAs: (v: string) => parseInt(v)
 					})} />
 					{errors.capacity && <span className="text-red-500">This field is required</span>}
